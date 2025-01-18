@@ -24,4 +24,5 @@ def calculator():
         return render_template("index.html" , result=result)
     except ValueError:
         return render_template("index.html", result = "Invalid Input")
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
